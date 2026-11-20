@@ -1,0 +1,26 @@
+# --- datasets & training runs (Roboflow exports, notebooks, metrics) ---
+# Everything under these two dirs is local-only: datasets, trainer.ipynb,
+# runs/detect/*, args.yaml, confusion matrices... none of it ships.
+playersv8/
+ballv8/
+yolov8_seg/
+models/Yolo8M Field Keypoints/
+
+# --- model weights & sample video: fetched from Hugging Face, never committed ---
+# (see pipeline/assets.py -> Ichigo369/football-tracking-weights)
+models/*.pt
+models/*.t7
+assets/*.mp4
+
+# --- archived / superseded material ---
+etc/
+
+# --- generated outputs ---
+output/
+_probe_*
+
+# --- python / tooling ---
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
